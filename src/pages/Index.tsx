@@ -3,22 +3,28 @@ import { MainLayout } from "@/layout/MainLayout";
 import { Visualizer } from "@/components/Visualizer";
 import { ArrowRight, Code, Split, Calculator, FileTerminal } from "lucide-react";
 import { cn } from "@/lib/utils";
+import { CSSProperties } from "react";
 
 const FeatureCard = ({ 
   icon: Icon, 
   title, 
   description, 
-  className 
+  className,
+  style
 }: { 
   icon: React.ElementType; 
   title: string; 
   description: string;
   className?: string;
+  style?: CSSProperties;
 }) => (
-  <div className={cn(
-    "glass-card p-6 transition-all duration-300 hover:scale-[1.02]",
-    className
-  )}>
+  <div 
+    className={cn(
+      "glass-card p-6 transition-all duration-300 hover:scale-[1.02]",
+      className
+    )}
+    style={style}
+  >
     <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center mb-4">
       <Icon className="w-5 h-5 text-primary" />
     </div>
