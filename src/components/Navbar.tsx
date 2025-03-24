@@ -8,7 +8,7 @@ export const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <nav className="w-full sticky top-0 z-50 backdrop-blur-lg bg-background/80 border-b border-border">
+    <nav className="w-full fixed top-0 z-50 backdrop-blur-lg bg-background/80 border-b border-border">
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex items-center justify-between h-16">
           {/* Logo and brand */}

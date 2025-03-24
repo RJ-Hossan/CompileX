@@ -37,20 +37,20 @@ const Index = () => {
   return (
     <MainLayout>
       {/* Hero Section */}
-      <section className="py-16 md:py-24">
+      <section className="py-10 md:py-24">
         <div className="container mx-auto text-center">
-          <div className="inline-block px-3 py-1 rounded-full bg-primary/10 text-primary text-sm font-medium mb-6 animate-fade-in">
+          <div className="inline-block px-3 py-1 rounded-full bg-primary/10 text-primary text-sm font-medium mb-4 md:mb-6 animate-fade-in">
             Powerful Compiler Tools
           </div>
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 tracking-tight animate-fade-in" style={{ animationDelay: "100ms" }}>
+          <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-4 md:mb-6 tracking-tight animate-fade-in" style={{ animationDelay: "100ms" }}>
             Compiler Explorer <span className="text-gradient">&</span> Visualizer
           </h1>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-8 animate-fade-in" style={{ animationDelay: "200ms" }}>
+          <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto mb-6 md:mb-8 animate-fade-in" style={{ animationDelay: "200ms" }}>
             Explore, analyze, and understand compiler principles with interactive visualizations. From lexical analysis to parsing, see how your code transforms at each stage.
           </p>
           <a 
             href="#explore" 
-            className="px-6 py-3 rounded-lg bg-primary text-primary-foreground flex items-center justify-center space-x-2 w-fit mx-auto transition-all duration-300 hover:bg-primary/90 hover:scale-105 animate-fade-in"
+            className="px-5 py-2.5 md:px-6 md:py-3 rounded-lg bg-primary text-primary-foreground flex items-center justify-center space-x-2 w-fit mx-auto transition-all duration-300 hover:bg-primary/90 hover:scale-105 animate-fade-in"
             style={{ animationDelay: "300ms" }}
           >
             <span>Start Exploring</span>
@@ -60,10 +60,10 @@ const Index = () => {
       </section>
 
       {/* Features Grid */}
-      <section className="py-16 animate-fade-in" style={{ animationDelay: "400ms" }}>
+      <section className="py-10 md:py-16 animate-fade-in" style={{ animationDelay: "400ms" }}>
         <div className="container mx-auto">
-          <h2 className="text-2xl md:text-3xl font-bold text-center mb-12">Key Features</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <h2 className="text-xl md:text-3xl font-bold text-center mb-8 md:mb-12">Key Features</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
             <FeatureCard 
               icon={Code}
               title="Lexical Analysis"
@@ -97,14 +97,14 @@ const Index = () => {
       </section>
 
       {/* Main Tool Section */}
-      <section id="explore" className="py-16 animate-fade-in" style={{ animationDelay: "900ms" }}>
+      <section id="explore" className="py-10 md:py-16 animate-fade-in" style={{ animationDelay: "900ms" }}>
         <div className="container mx-auto">
-          <h2 className="text-2xl md:text-3xl font-bold text-center mb-4">Interactive Explorer</h2>
-          <p className="text-center text-muted-foreground max-w-3xl mx-auto mb-12">
+          <h2 className="text-xl md:text-3xl font-bold text-center mb-4">Interactive Explorer</h2>
+          <p className="text-center text-muted-foreground max-w-3xl mx-auto mb-8 md:mb-12">
             Type your code, expressions, or grammars and see the results in real-time.
           </p>
           
-          <div className="glass p-6 rounded-xl">
+          <div className="glass p-4 md:p-6 rounded-xl">
             <Visualizer />
           </div>
         </div>

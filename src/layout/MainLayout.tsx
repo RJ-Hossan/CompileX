@@ -6,7 +6,7 @@ export const MainLayout = ({ children }: PropsWithChildren) => {
   return (
     <div className="min-h-screen flex flex-col">
       <Navbar />
-      <main className="flex-grow container mx-auto px-4 py-8 md:px-6 md:py-12">
+      <main className="flex-grow container mx-auto px-4 py-8 md:px-6 md:py-12 mt-16">
         {children}
       </main>
       <footer className="border-t border-border py-6 bg-background">
