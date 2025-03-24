@@ -7,7 +7,7 @@ The **Compiler Explorer & Visualizer** is an **interactive website** designed to
 
 ### 1️⃣ Dual Theme Support (Dark & Light Mode) 🌙🔆
 - Users can **switch** between **Dark Mode** and **Light Mode**.
-- Built using **Tailwind CSS with DaisyUI** for seamless theme toggling.
+- Built using **Tailwind CSS with shadcn-UI** for seamless theme toggling.
 
 ---
 
