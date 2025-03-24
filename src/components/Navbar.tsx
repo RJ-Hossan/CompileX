@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { ThemeToggle } from "./ThemeToggle";
 import { MenuIcon, X } from "lucide-react";
@@ -18,7 +17,7 @@ export const Navbar = () => {
                 <span className="text-primary-foreground font-semibold text-lg">&lt;/&gt;</span>
               </div>
               <h1 className="text-xl font-semibold">
-                <span className="text-gradient">Compiler</span> Explorer
+                <span className="text-gradient">Compile</span> X
               </h1>
             </a>
           </div>
@@ -57,14 +56,23 @@ export const Navbar = () => {
             <ThemeToggle className="mr-2" />
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="p-2 rounded-md hover:bg-secondary focus:outline-none"
+              className="p-2 rounded-md hover:bg-secondary focus:outline-none relative"
               aria-label="Toggle menu"
             >
-              {isMenuOpen ? (
-                <X className="w-5 h-5" />
-              ) : (
-                <MenuIcon className="w-5 h-5" />
-              )}
+              {/* Show the close icon only when menu is open */}
+              <X
+                className={cn(
+                  "w-5 h-5 absolute transition-opacity duration-300",
+                  isMenuOpen ? "opacity-100" : "opacity-0"
+                )}
+              />
+              {/* Show the menu icon only when menu is closed */}
+              <MenuIcon
+                className={cn(
+                  "w-5 h-5 transition-opacity duration-300",
+                  isMenuOpen ? "opacity-0" : "opacity-100"
+                )}
+              />
             </button>
           </div>
         </div>
@@ -73,11 +81,11 @@ export const Navbar = () => {
       {/* Mobile menu */}
       <div
         className={cn(
-          "md:hidden fixed inset-0 z-40 bg-background/95 backdrop-blur-md transition-transform duration-300 ease-in-out transform",
+          "md:hidden fixed inset-0 z-40 bg-background transition-transform duration-300 ease-in-out transform",
           isMenuOpen ? "translate-x-0" : "translate-x-full"
         )}
       >
-        <div className="pt-20 px-6 flex flex-col space-y-6">
+        <div className="pt-20 px-6 bg-background flex flex-col space-y-6">
           <a 
             href="#lexeme-tokenizer" 
             className="text-lg py-2 border-b border-border"

@@ -18,7 +18,7 @@ export const MainLayout = ({ children }: PropsWithChildren) => {
               </div>
             </div>
             <div className="text-sm text-muted-foreground">
-              © {new Date().getFullYear()} • Built with precision and care
+              © {new Date().getFullYear()} • Built with love and care
             </div>
           </div>
         </div>
