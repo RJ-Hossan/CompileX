@@ -112,10 +112,12 @@ We welcome contributions! Feel free to **fork the repo**, create a **new branch*
 
 ## 📄 License
 This project is licensed under the **MIT License**.
+
 ---
 
-## Acknowledgements
+## Acknowledgements  
 A heartfelt thank to **Lovable** for their encouragement and support in building this site using my prompt as well as to ChatGPT for its invaluable assistance in shaping ideas and refining this project.
+
 ---
 
 🚀 Happy Coding!
