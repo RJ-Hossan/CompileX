@@ -81,8 +81,8 @@ The **Compiler Explorer & Visualizer** is an **interactive website** designed to
 
 ### 1️⃣ Clone the Repository
 ```bash
- git clone https://github.com/yourusername/compiler-explorer.git
- cd compiler-explorer
+ git clone https://github.com/RJ-Hossan/CompileX.git
+ cd CompileX
 ```
 
 ### 2️⃣ Install Dependencies
