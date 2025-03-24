@@ -1,69 +1,122 @@
-# Welcome to your Lovable project
+# 🚀 Compiler Explorer & Visualizer
 
-## Project info
+## 📌 Overview
+The **Compiler Explorer & Visualizer** is an **interactive website** designed to **showcase, analyze, and visualize** different aspects of compiler design. This tool provides **real-time lexeme generation, tokenization, expression evaluation, CFG acceptance checking, and predictive parsing**, making it an ideal educational and debugging resource for students, developers, and enthusiasts.
 
-**URL**: https://lovable.dev/projects/4fab02ef-128c-495a-9faa-6f6e70836842
+## 🌟 Features & Functionalities
 
-## How can I edit this code?
+### 1️⃣ Dual Theme Support (Dark & Light Mode) 🌙🔆
+- Users can **switch** between **Dark Mode** and **Light Mode**.
+- Built using **Tailwind CSS with DaisyUI** for seamless theme toggling.
 
-There are several ways of editing your application.
+---
 
-**Use Lovable**
+### 2️⃣ Interactive Lexeme Generator & Tokenizer 🛠️
+- **Input:** Users enter a code snippet.
+- **Output:**
+  - The **Lexeme Generator** extracts **words, numbers, operators, and symbols**.
+  - The **Tokenizer** categorizes lexemes into **keywords, identifiers, operators, etc.**
+- **Visualization:**
+  - Structured **table display** of lexemes and tokens.
+  - **Color-coded tokens** for easy differentiation.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/4fab02ef-128c-495a-9faa-6f6e70836842) and start prompting.
+---
 
-Changes made via Lovable will be committed automatically to this repo.
+### 3️⃣ Expression Evaluator (Mathematical & Logical) 🔢
+- **Input:** Users enter a mathematical or logical expression.
+- **Processing:**
+  - Breaks the expression into lexemes.
+  - Uses **parsing algorithms (Shunting Yard, Recursive Descent)** to evaluate the result.
+- **Output:**
+  - Step-by-step **evaluation process**.
+  - **Final computed result**.
 
-**Use your preferred IDE**
+---
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+### 4️⃣ CFG Acceptance Checker 📜
+- **Input:** Users enter a **Context-Free Grammar (CFG)** in **BNF or EBNF format** and provide a **test string**.
+- **Processing:**
+  - Uses **LL(1) parsing, CYK algorithm**, or other **CFG validation techniques**.
+- **Output:**
+  - Shows whether the string is **Accepted** or **Rejected**.
+  - **Highlights parsing steps dynamically**.
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+---
 
-Follow these steps:
+### 5️⃣ Predictive Parsing Visualizer (LL(1) Parser) 📊
+- **Input:** Users enter a grammar and a test string.
+- **Processing:**
+  - Constructs **FIRST and FOLLOW sets**.
+  - Generates the **parsing table dynamically**.
+  - Simulates the **parsing process step by step**.
+- **Output:**
+  - Displays a real-time **parsing table**.
+  - Shows **stack visualization** of how the parser works.
+  - Highlights parsing steps **dynamically with animations**.
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+---
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+### 6️⃣ Code Playground (Live Compilation & Syntax Highlighting) ⌨️
+- Users can **write their own code** in a built-in **code editor**.
+- **Syntax highlighting**
+- Runs **Lexeme & Tokenization Analysis** in **real-time**.
+---
 
-# Step 3: Install the necessary dependencies.
-npm i
+## 🛠️ Tech Stack
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+### **Frontend:**
+- **React.js + Vite** (Fast & lightweight)
+- **Tailwind CSS + shadcn-UI** (Modern UI with theme toggling)
+- **TypeScript**
+---
+
+## 🔥 Additional Features for Future Enhancements
+- Support for **multiple parsing techniques (LL, LR, CYK, etc.)**.
+- Convert **CFG to equivalent automata (DFA/NFA visualization)**.
+- Allow users to **define their own grammars & parsing rules** dynamically.
+
+---
+
+## 📥 Installation & Setup
+
+### 1️⃣ Clone the Repository
+```bash
+ git clone https://github.com/yourusername/compiler-explorer.git
+ cd compiler-explorer
 ```
 
-**Edit a file directly in GitHub**
+### 2️⃣ Install Dependencies
+```bash
+ npm install  # Install frontend dependencies
+```
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+### 3️⃣ Run the Project
+```bash
+ npm run dev
+```
 
-**Use GitHub Codespaces**
+### 4️⃣ Access the Application
+Go to: **http://localhost:5005**
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+---
 
-## What technologies are used for this project?
+## 🤝 Contributing
+We welcome contributions! Feel free to **fork the repo**, create a **new branch**, and submit a **pull request** with your improvements.
 
-This project is built with .
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature-branch`).
+3. Make changes and commit (`git commit -m 'Added new feature'`).
+4. Push the changes (`git push origin feature-branch`).
+5. Open a pull request.
+---
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+## 📄 License
+This project is licensed under the **MIT License**.
+---
 
-## How can I deploy this project?
+## Acknowledgements
+A heartfelt thank to **Lovable** for their encouragement and support in building this site using my prompt as well as to ChatGPT for its invaluable assistance in shaping ideas and refining this project.
+---
 
-Simply open [Lovable](https://lovable.dev/projects/4fab02ef-128c-495a-9faa-6f6e70836842) and click on Share -> Publish.
+🚀 Happy Coding!
 
-## I want to use a custom domain - is that possible?
-
-We don't support custom domains (yet). If you want to deploy your project under your own domain then we recommend using Netlify. Visit our docs for more details: [Custom domains](https://docs.lovable.dev/tips-tricks/custom-domain/)
